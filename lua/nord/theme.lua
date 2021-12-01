@@ -11,7 +11,7 @@ theme.loadSyntax = function ()
     Constant =       { fg = nord.nord4_gui }, -- any constant
     Character =      { fg = nord.nord14_gui }, -- any character constant: 'c', '\n'
     Number =         { fg = nord.nord15_gui }, -- a number constant: 5
-    Boolean =        { fg = nord.nord9_gui }, -- a boolean constant: TRUE, false
+    Boolean =        { fg = nord.nord15_gui }, -- a boolean constant: TRUE, false
     Float =          { fg = nord.nord15_gui }, -- a floating point constant: 2.3e10
     Statement =      { fg = nord.nord9_gui }, -- any statement
     Label =          { fg = nord.nord9_gui }, -- case, default, etc.
@@ -27,7 +27,7 @@ theme.loadSyntax = function ()
     SpecialChar =    { fg = nord.nord13_gui }, -- special character in a constant
     Tag =            { fg = nord.nord4_gui }, -- you can use CTRL-] on this
     Delimiter =      { fg = nord.nord6_gui }, -- character that needs attention like , or .
-    SpecialComment = { fg = nord.nord8_gui }, -- special things inside a comment
+    SpecialComment = { fg = nord.nord3_gui_bright }, -- special things inside a comment
     Debug =          { fg = nord.nord11_gui }, -- debugging statements
     Underlined =     { fg = nord.nord14_gui, bg = nord.none, style = 'underline' }, -- text that stands out, HTML links
     Ignore =         { fg = nord.nord1_gui }, -- left blank, hidden
@@ -90,7 +90,7 @@ theme.loadEditor = function ()
     DiffDelete =       { fg = nord.nord11_gui, bg = nord.none, style = 'reverse' }, -- diff mode: Deleted line
     DiffText =         { fg = nord.nord15_gui, bg = nord.none, style = 'reverse' }, -- diff mode: Changed text within a changed line
     EndOfBuffer =      { fg = nord.nord1_gui },
-    ErrorMsg =         { fg = nord.none },
+    ErrorMsg =         { fg = nord.nord11_gui },
     Folded =           { fg = nord.nord_3_gui_bright, bg = nord.none, style = 'italic' },
     FoldColumn =       { fg = nord.nord7_gui },
     IncSearch =        { fg = nord.nord6_gui, bg = nord.nord10_gui },
@@ -106,7 +106,7 @@ theme.loadEditor = function ()
     PmenuThumb =       { fg = nord.nord4_gui, bg = nord.nord4_gui },
     Question =         { fg = nord.nord14_gui },
     QuickFixLine =     { fg = nord.nord4_gui, bg = nord.none, style = 'reverse' },
-    qfLineNr =         { fg = nord.nord4_gui, bg = nord.none, style = 'reverse' },
+    qfLineNr =         { fg = nord.nord4_gui, bg = nord.none},
     Search =           { fg = nord.nord10_gui, bg = nord.nord6_gui, style = 'reverse' },
     SpecialKey =       { fg = nord.nord9_gui },
     SpellBad =         { fg = nord.nord11_gui, bg = nord.none, style = 'italic,undercurl' },
@@ -206,7 +206,7 @@ theme.loadTreeSitter = function ()
     TSString =            { fg = nord.nord14_gui },    -- For strings.
 
     TSAttribute =         { fg = nord.nord15_gui },    -- (unstable) TODO: docs
-    TSBoolean=            { fg = nord.nord9_gui },    -- For booleans.
+    TSBoolean=            { fg = nord.nord15_gui },    -- For booleans.
     TSConstBuiltin =      { fg = nord.nord7_gui },    -- For constant that are built in the language: `nil` in Lua.
     TSConstMacro =        { fg = nord.nord7_gui },    -- For constants that are defined by macros: `NULL` in C.
     TSError =             { fg = nord.nord11_gui },    -- For syntax/parser errors.
