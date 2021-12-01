@@ -105,8 +105,8 @@ theme.loadEditor = function ()
     PmenuSbar =        { fg = nord.nord4_gui, bg = nord.nord2_gui },
     PmenuThumb =       { fg = nord.nord4_gui, bg = nord.nord4_gui },
     Question =         { fg = nord.nord14_gui },
-    QuickFixLine =     { fg = nord.nord4_gui, bg = nord.nord6_gui, style = 'reverse' },
-    qfLineNr =         { fg = nord.nord4_gui, bg = nord.nord6_gui, style = 'reverse' },
+    QuickFixLine =     { fg = nord.nord4_gui, bg = nord.none, style = 'reverse' },
+    qfLineNr =         { fg = nord.nord4_gui, bg = nord.none},
     Search =           { fg = nord.nord10_gui, bg = nord.nord6_gui, style = 'reverse' },
     SpecialKey =       { fg = nord.nord9_gui },
     SpellBad =         { fg = nord.nord11_gui, bg = nord.none, style = 'italic,undercurl' },
@@ -206,7 +206,7 @@ theme.loadTreeSitter = function ()
     TSString =            { fg = nord.nord14_gui },    -- For strings.
 
     TSAttribute =         { fg = nord.nord15_gui },    -- (unstable) TODO: docs
-    TSBoolean=            { fg = nord.nord9_gui },    -- For booleans.
+    TSBoolean=            { fg = nord.nord15_gui },    -- For booleans.
     TSConstBuiltin =      { fg = nord.nord7_gui },    -- For constant that are built in the language: `nil` in Lua.
     TSConstMacro =        { fg = nord.nord7_gui },    -- For constants that are defined by macros: `NULL` in C.
     TSError =             { fg = nord.nord11_gui },    -- For syntax/parser errors.
