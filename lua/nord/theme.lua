@@ -91,7 +91,7 @@ theme.loadEditor = function ()
     DiffText =         { fg = nord.nord15_gui, bg = nord.none, style = 'reverse' }, -- diff mode: Changed text within a changed line
     EndOfBuffer =      { fg = nord.nord1_gui },
     ErrorMsg =         { fg = nord.nord11_gui },
-    Folded =           { fg = nord.nord_3_gui_bright, bg = nord.none, style = 'italic' },
+    Folded =           { fg = nord.nord3_gui_bright, bg = nord.none, style = 'italic' },
     FoldColumn =       { fg = nord.nord7_gui },
     IncSearch =        { fg = nord.nord6_gui, bg = nord.nord10_gui },
     LineNr =           { fg = nord.nord3_gui_bright },
@@ -117,12 +117,12 @@ theme.loadEditor = function ()
     StatusLineNC =     { fg = nord.nord4_gui, bg = nord.nord1_gui },
     StatusLineTerm =   { fg = nord.nord4_gui, bg = nord.nord2_gui },
     StatusLineTermNC = { fg = nord.nord4_gui, bg = nord.nord1_gui },
-    TabLineFill =      { fg = nord.nord4_gui },
-    TablineSel =       { fg = nord.nord8_gui, bg = nord.nord3_gui },
-    Tabline =          { fg = nord.nord4_gui },
+    TabLineFill =      { fg = nord.nord4_gui, bg = nord.none },
+    TablineSel =       { fg = nord.nord1_gui, bg = nord.nord9_gui },
+    Tabline =          { fg = nord.nord4_gui, bg = nord.nord1_gui },
     Title =            { fg = nord.nord14_gui, bg = nord.none, style = 'bold' },
-    Visual =           { fg = nord.none, bg = nord.nord1_gui },
-    VisualNOS =        { fg = nord.none, bg = nord.nord1_gui },
+    Visual =           { fg = nord.none, bg = nord.nord2_gui },
+    VisualNOS =        { fg = nord.none, bg = nord.nord2_gui },
     WarningMsg =       { fg = nord.nord15_gui },
     WildMenu =         { fg = nord.nord12_gui, bg = nord.none, style = 'bold' },
     CursorColumn =     { fg = nord.none, bg = nord.cursorlinefg },
@@ -283,6 +283,10 @@ theme.loadLSP = function ()
     LspReferenceRead =                     { fg = nord.nord4_gui, bg = nord.nord1_gui }, -- used for highlighting "read" references
     LspReferenceWrite =                    { fg = nord.nord4_gui, bg = nord.nord1_gui }, -- used for highlighting "write" references
 
+    DiagnosticError            = { link = "LspDiagnosticsDefaultError" },
+    DiagnosticWarn             = { link = "LspDiagnosticsDefaultWarning" },
+    DiagnosticInfo             = { link = "LspDiagnosticsDefaultInformation" },
+    DiagnosticHint             = { link = "LspDiagnosticsDefaultHint" },
     DiagnosticVirtualTextWarn  = { link = "LspDiagnosticsVirtualTextWarning" },
     DiagnosticUnderlineWarn    = { link = "LspDiagnosticsUnderlineWarning" },
     DiagnosticFloatingWarn     = { link = "LspDiagnosticsFloatingWarning" },
